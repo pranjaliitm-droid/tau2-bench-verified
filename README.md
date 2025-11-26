@@ -8,7 +8,7 @@
 
 ## 🔍 About τ²-Bench-Verified
 
-**τ²-Bench-Verified** is a corrected and verified version of the original [τ²-bench benchmark](https://github.com/sierra-research/tau2-bench). This release addresses issues discovered in the original dataset where task definitions, expected actions, and evaluation criteria did not properly align with the stated policies or database contents.
+**τ²-Bench-Verified** is a corrected and human verified version of the original [τ²-bench benchmark](https://github.com/sierra-research/tau2-bench). This release addresses issues discovered in the original dataset where task definitions, expected actions, and evaluation criteria did not properly align with the stated policies or database contents.
 
 ### Why This Version?
 
@@ -40,7 +40,7 @@ All fixes have been carefully documented with references to the specific policy 
 
 $\tau^2$-bench-Verified implements a simulation framework for evaluating customer service agents across various domains.
 
-**$\tau^2$-bench is the new iteration of the original $\tau$-bench**, featuring code fixes and an additional telecom domain.
+**$\tau^2$-bench-Verified is the new iteration of the original $\tau$-bench**, featuring a corrected and human verified version of the original [τ²-bench benchmark](https://github.com/sierra-research/tau2-bench). This release addresses issues discovered in the original dataset where task definitions, expected actions, and evaluation criteria did not properly align with the stated policies or database contents.
 
 Each domain specifies:
 - a policy that the agent must follow

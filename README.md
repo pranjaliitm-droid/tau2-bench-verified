@@ -209,7 +209,7 @@ To run a test evaluation on only 5 tasks with 1 trial per task, run:
 tau2 run \ 
 --domain airline \
 --agent-llm gpt-4.1 \
---user-llm gpt-4.1 \
+--user-llm gpt-5.1 \
 --num-trials 1 \
 --num-tasks 5
 ```
@@ -326,7 +326,7 @@ To run using this policy, use the `telecom-workflow` domain.
 tau2 run \
   --domain telecom-workflow \
   --agent-llm gpt-4.1 \
-  --user-llm gpt-4.1 \
+  --user-llm gpt-5.1 \
   ...
 ```
 

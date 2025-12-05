@@ -162,6 +162,7 @@ def to_litellm_messages(messages: list[Message]) -> list[dict]:
                     "role": "assistant",
                     "content": message.content,
                     "tool_calls": tool_calls,
+                    "thoughts": message.thoughts,
                 }
             )
         elif isinstance(message, ToolMessage):
@@ -240,11 +241,12 @@ def generate(
         for tool_call in tool_calls
     ]
     tool_calls = tool_calls or None
-
+    thoughts = [response.message.thinking_blocks[0]['thinking']] or []
     message = AssistantMessage(
         role="assistant",
         content=content,
         tool_calls=tool_calls,
+        thoughts=thoughts,
         cost=cost,
         usage=usage,
         raw_data=response.to_dict(),

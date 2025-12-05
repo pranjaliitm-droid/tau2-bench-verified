@@ -93,6 +93,9 @@ class ParticipantMessageBase(BaseModel):
     tool_calls: Optional[list[ToolCall]] = Field(
         description="The tool calls made in the message.", default=None
     )
+    thoughts: Optional[list[Any]] = Field(
+    description="The thought blocks for the current turn", default=None
+    )
     turn_idx: Optional[int] = Field(
         description="The index of the turn in the conversation.", default=None
     )

@@ -170,6 +170,7 @@ class UserSimulator(BaseUser):
             content=user_response,
             cost=assistant_message.cost,
             usage=assistant_message.usage,
+            thoughts=assistant_message.thoughts,
             raw_data=assistant_message.raw_data,
         )
 
